@@ -1,0 +1,17 @@
+[
+  {
+    "_id": "5cd35873-d24a-428e-ae0b-0bedd10095c4",
+    "colName": "trybesmith",
+    "created": "2022-08-05T16:58:43.250Z",
+    "sortNum": 10000,
+    "folders": [
+      {
+        "_id": "041ad1d4-ea86-47fb-b40b-24ede4f5a395",
+        "name": "products",
+        "containerId": "",
+        "created": "2022-08-05T16:58:57.736Z",
+        "sortNum": 10000
+      }
+    ]
+  }
+]
