@@ -31,5 +31,24 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "582a8c04-841e-4dbc-8253-5910b02d0a45",
+    "colId": "5cd35873-d24a-428e-ae0b-0bedd10095c4",
+    "containerId": "ea4b75fe-8d31-4413-9a58-93c35debb13e",
+    "name": "user",
+    "url": "localhost:3000/users",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2022-08-05T19:13:07.963Z",
+    "modified": "2022-08-05T19:14:15.429Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{ \n  \"username\": \"MAX\",\n  \"classe\": \"swordsman\",\n  \"level\": 10,\n  \"password\": \"SavingPeople\"\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]
