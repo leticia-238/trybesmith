@@ -6,6 +6,12 @@ const productsController = {
     const result = await productsService.getAll();
     res.status(200).json(result);
   },
+  
+  create: async (req: Request, res: Response) => {
+    const product = req.body;
+    const productInserted = await productsService.create(product);
+    res.status(201).json(productInserted);
+  },
 };
 
 export default productsController;
