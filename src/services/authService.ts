@@ -1,4 +1,5 @@
 import { sign, verify } from 'jsonwebtoken';
+import { loginSchema } from './validationsSchemas';
 
 const secret = 'mysecret';
 
@@ -13,6 +14,10 @@ type Payload = {
 }; 
 
 const authService = {
+  validateLoginBody: async (login: Payload) => {
+    await loginSchema.validateAsync(login);
+  },
+  
   generateToken: (payload: Payload) => sign(payload, secret, jwtConfig),
     
   verifyToken: (token: string) => verify(token, secret),

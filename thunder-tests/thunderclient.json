@@ -83,5 +83,24 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "ba4c3d62-3b40-4a7f-a449-b096af19c83d",
+    "colId": "5cd35873-d24a-428e-ae0b-0bedd10095c4",
+    "containerId": "010830a4-d241-41ca-baab-b39f7d9f1aff",
+    "name": "login invalid",
+    "url": "localhost:3000/login",
+    "method": "POST",
+    "sortNum": 50000,
+    "created": "2022-08-07T20:43:56.918Z",
+    "modified": "2022-08-07T21:28:43.389Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"username\": \"teste\",\n  \"password\": \"1senharerrada\"\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]
