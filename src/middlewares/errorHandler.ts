@@ -14,6 +14,7 @@ const errors: Record<string, ErrorProps> = {
   UnauthorizedError: { code: 401 },
   NotFoundError: { code: 404 },
   ConflictError: { code: 409 },
+  UnprocessableEntityError: { code: 422 },
 };
 
 const errorHandler = (err: Error, _req: Request, res: Response, _next: NextFunction) => {

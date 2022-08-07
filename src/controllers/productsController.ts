@@ -9,6 +9,7 @@ const productsController = {
   
   create: async (req: Request, res: Response) => {
     const product = req.body;
+    await productsService.validateProductBody(product);
     const productInserted = await productsService.create(product);
     res.status(201).json(productInserted);
   },

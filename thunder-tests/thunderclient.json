@@ -3,7 +3,7 @@
     "_id": "fd6484f3-b878-4bd4-a441-5fa1fce032d1",
     "colId": "5cd35873-d24a-428e-ae0b-0bedd10095c4",
     "containerId": "041ad1d4-ea86-47fb-b40b-24ede4f5a395",
-    "name": "all",
+    "name": "product",
     "url": "localhost:3000/products",
     "method": "POST",
     "sortNum": 10000,
@@ -22,12 +22,12 @@
     "_id": "8564f9ad-1f75-4965-a4ca-b34aedce76a6",
     "colId": "5cd35873-d24a-428e-ae0b-0bedd10095c4",
     "containerId": "041ad1d4-ea86-47fb-b40b-24ede4f5a395",
-    "name": "product",
+    "name": "all",
     "url": "localhost:3000/products",
     "method": "GET",
-    "sortNum": 20000,
+    "sortNum": 5000,
     "created": "2022-08-05T16:59:30.143Z",
-    "modified": "2022-08-05T16:59:30.143Z",
+    "modified": "2022-08-07T22:02:09.821Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -99,6 +99,25 @@
     "body": {
       "type": "json",
       "raw": "{\n  \"username\": \"teste\",\n  \"password\": \"1senharerrada\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "7c499d1d-aa1e-4137-a283-4fd6c2f83511",
+    "colId": "5cd35873-d24a-428e-ae0b-0bedd10095c4",
+    "containerId": "041ad1d4-ea86-47fb-b40b-24ede4f5a395",
+    "name": "product invalid",
+    "url": "localhost:3000/products",
+    "method": "POST",
+    "sortNum": 15000,
+    "created": "2022-08-07T22:01:54.169Z",
+    "modified": "2022-08-07T22:24:52.328Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": 17897481,\n  \"amount\": \"30 peças de ouro\"\n}",
       "form": []
     },
     "tests": []
