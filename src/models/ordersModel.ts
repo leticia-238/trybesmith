@@ -8,7 +8,7 @@ const ordersModel = {
     FROM Trybesmith.Orders AS orders
     INNER JOIN Trybesmith.Products AS products 
     ON orders.id = products.orderId
-    ORDER BY id ASC`;
+    ORDER BY userId ASC`;
     const [result] = await connection.query(sql);
     return result as Order[];
   },

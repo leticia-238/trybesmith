@@ -15,7 +15,7 @@ const ordersService = {
     
     orders.forEach(({ id, userId, productId }) => {
       const productsIds = obj[id] ? [...obj[id].productsIds, productId] : [productId];
-      obj[id] = { id, userId, productsIds };
+      obj[userId] = { id, userId, productsIds };
     });
       
     return Object.values(obj);
